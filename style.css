@@ -1,0 +1,121 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(to bottom, white 50%, #1a73e8 50%);
+        padding: 20px;
+    }
+
+    .login-container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .logo span {
+        font-size: 24px;
+        font-weight: bold;
+        color: #1a73e8;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+        font-size: 14px;
+    }
+
+    .form-group label span {
+        color: red;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .forgot-password {
+        display: block;
+        text-align: right;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #1a73e8;
+        text-decoration: none;
+    }
+
+    .sign-in-btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #1a73e8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .sign-in-btn:hover {
+        background-color: #1557b0;
+    }
+
+    .create-account {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .create-account a {
+        color: #1a73e8;
+        text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+        .login-container {
+            padding: 20px;
+            max-width: 100%;
+        }
+
+        .logo span {
+            font-size: 20px;
+        }
+
+        .form-group input {
+            font-size: 14px;
+        }
+
+        .sign-in-btn {
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        .create-account {
+            font-size: 12px;
+        }
+    }
